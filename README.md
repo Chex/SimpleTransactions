@@ -1,30 +1,10 @@
-# iOS
-Create a simple application that will fetch a list of transactions from an api endpoint and display them in a list.  When a user selects a transaction they will be shown a second screen that will display a more detailed view of the transaction data. 
-
-We have given you some code over here to start with. Please clone/fork this repository. 
-
-
-## Specification
-- Consume the following API: https://gist.githubusercontent.com/Josh-Ng/500f2716604dc1e8e2a3c6d31ad01830/raw/4d73acaa7caa1167676445c922835554c5572e82/test-data.json  
-- Display data in a sorted list 
-- Open a detailed view when user selects a list item 
-
-## Commits
-Please commit frequently to communicate your throughts while working on this assignment.
-
-## What is valued
-- Tests 
-- Best practice design patterns 
-- Clean Code 
-
-## Nice to have (If you have time)
-- Calculate how much GST was paid on each transaction.  GST is 15%.  It is up to you to choose the most appropriate place to display GST 
-- Color code transaction amounts (credit green, debit red)
-- Narration/talkback support 
-
-## Duration 
-Try not to spend more than 4 hours on this.  You are not necessarily expected to do everything in this assignment because of the short duration. 
-
-## Tech 
-- Native iOS frameworks only (no Flutter sorry) 
-- Use whatever libraries you are comfortable with
+# Goals
+- SwiftUI is used as the native development framework. (While I also like UIKit, this time I wanted to try some challenging new technology.)
+- The Combine framework is utilized, along with async/await feature.
+- The URLSession extension in the project accepts T.Type as a parameter to simplify data parsing. This approach is similar to the concept of DIManager.
+- The project supports sorting all transactions by ID, date, credits, and debits.
+- In both the list rows and detail views, credit amounts are displayed in green, while debit amounts are shown in red.
+- In the transaction detail views, the GST amount is displayed below the credit amount.
+- VoiceOver accessibility is supported.
+- The Unit Test section verifies the ability to fetch data from the network.
+- The UI Test section checks if tapping a list item successfully navigates to the detail view.
